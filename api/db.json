@@ -14,6 +14,21 @@
       "nome": "Esportes Kids",
       "descricao": "Atividades esportivas adaptadas para crianças",
       "id": "3"
+    },
+    {
+      "id": "e05a",
+      "nome": "Beluska",
+      "descricao": "Recreacao infantil\n"
+    },
+    {
+      "id": "7456",
+      "nome": "teste",
+      "descricao": "teste"
+    },
+    {
+      "id": "a076",
+      "nome": "teste2",
+      "descricao": "teste2"
     }
   ]
 }
