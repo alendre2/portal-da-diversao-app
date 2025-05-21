@@ -1,1 +1,30 @@
-<p>brinquedos works!</p>
+<div class="p-6 max-w-lg mx-auto bg-white shadow-lg rounded-lg mt-6 ">
+    <h2>Nova categoria</h2>
+    <hr/>
+    <form id="brinquedosForm">
+        <label class="block text-gray-600 font-medium mb-2">Nome da Atividade ou Brinquedo</label>
+        <input type="text"
+               id="Nome"
+               placeholder="Ex: Cama elástica, Pula-pula, Pintura facial, Piscina de bolinhas"
+               class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
+               required
+               />
+               <span class="text-red-500">Campo obrigatório</span>
+
+        <div class="mb-4">
+            <label class="block text-gray-600 font-medium mb-2">Descrição</label>
+            <textarea
+               rows="4"
+               id="descricao"
+               name="descricao"
+               placeholder="Ex: Pintura facial com temas infantis, gincanas educativas, contação de histórias, brinquedos infláveis de até 3 metros."
+               class="w-full p-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring focus:ring-blue-400"
+               required
+               ></textarea>
+               <span class="text-red-500">Campo obrigatório</span>
+        </div>
+        <button type="submit" class="w-full bg-blue-600 text-white font-semibold p-3 rounded shadow hover:bg-blue-700">
+            Cadastrar Atividade ou Recreação Infantil
+        </button>
+    </form>
+</div>
