@@ -36,7 +36,11 @@ export class LugarComponent implements OnInit {
   }
 
  salvar() {
-  this.service.salvar(this.camposForm.value)
+
+  this.camposForm.markAllAsTouched();
+
+  if(this.camposForm.valid){
+    this.service.salvar(this.camposForm.value)
     .subscribe({
       next: (lugar) => {
         console.log('Cadastrado com sucesso!', lugar);
@@ -44,6 +48,11 @@ export class LugarComponent implements OnInit {
       },
       error: erro => console.log('Ocorreu um erro: ', erro)
     });
-}
+  }
+ }
+isCampoInvalido(nomeCampo: string ): boolean{
+      const campo = this.camposForm.get(nomeCampo);
+      return campo?.invalid && campo?.touched && campo?.errors?.['required']
+  }
 
 }

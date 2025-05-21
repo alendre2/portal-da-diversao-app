@@ -14,10 +14,12 @@
             required
             class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
             />
+             <span class="text-red-500" *ngIf="isCampoInvalido('nome')">Campo obrigatório</span>
+
         </div>
 
         <div class="mb-4">
-            <label for="nome" class="block text-gray-600 font-medium mb-2">Categoria</label>
+            <label for="categoria" class="block text-gray-600 font-medium mb-2">Categoria</label>
             <select
                 id="categoria" 
                 name="categoria"
@@ -29,6 +31,7 @@
 
 
             </select>
+            <span class="text-red-500" *ngIf="isCampoInvalido('categoria')">Campo obrigatório</span>
 
         </div>
 
@@ -44,6 +47,8 @@
             required
             class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
             />
+            <span class="text-red-500" *ngIf="isCampoInvalido('localizacao')">Campo obrigatório</span>
+
         </div>
 
         <div class="mb-4">
@@ -57,6 +62,7 @@
             required
             class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
             />
+            <span class="text-red-500" *ngIf="isCampoInvalido('urlFoto')">Campo obrigatório</span>
         </div>
 
          <div class="mb-4">
@@ -76,6 +82,7 @@
 
 
             </select>
+            <span class="text-red-500" *ngIf="isCampoInvalido('avaliacao')">Campo obrigatório</span>
 
         </div>
 
