@@ -4,7 +4,13 @@ import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
   {
-    path: '', component: LayoutComponent
+    path: '', component: LayoutComponent, 
+    children: [
+      {
+        path: 'brinquedos',
+        loadChildren:() => import('../brinquedos/brinquedos.module').then(m => m.BrinquedosModule)
+      }
+    ]
   }
 ];
 

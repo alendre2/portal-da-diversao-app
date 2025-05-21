@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { TemplateRoutingModule } from './template-routing.module';
 import { LayoutComponent } from './layout/layout.component';
+import { BrinquedosModule } from '../brinquedos/brinquedos.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { LayoutComponent } from './layout/layout.component';
   ],
   imports: [
     CommonModule,
-    TemplateRoutingModule
+    TemplateRoutingModule,
+    BrinquedosModule
   ]
 })
 export class TemplateModule { }
