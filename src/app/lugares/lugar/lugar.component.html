@@ -1,8 +1,57 @@
 <div class="p-6 max-w-lg mx-auto bg-white shadow-lg rounded-lg mt-6 ">
-    <h2>Novo lugar </h2>
+    <h2>Cadastrar Lugar de Evento</h2>
     <hr/>
 
-    <form id="lugarForm">
+    <form id="lugarForm" [formGroup]="camposForm" (ngSubmit)="salvar()">
+        <div class="mb-4">
+            <label for="nome" class="block text-gray-600 font-medium mb-2">Descrição do Local</label>
+            <input 
+            type="text"
+            id="nome"
+            name="nome"
+            formControlName="nome"
+            placeholder=" Ex: Salão de Festas Alegria, Escola Pequeno Príncipe, Praça Central"
+            required
+            class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
+            />
+        </div>
+
+        <div class="mb-4">
+            <label for="nome" class="block text-gray-600 font-medium mb-2">Categoria</label>
+
+        </div>
+
+
+        <div class="mb-4">
+            <label for="localizacao" class="block text-gray-600 font-medium mb-2">Localização</label>
+            <input 
+            type="text"
+            id="localizacao"
+            name="localizacao"
+            formControlName="localizacao"
+            placeholder=" Ex: praca das gracas"
+            required
+            class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
+            />
+        </div>
+
+        <div class="mb-4">
+            <label for="urlFoto" class="block text-gray-600 font-medium mb-2">Localização</label>
+            <input 
+            type="text"
+            id="urlFoto"
+            name="urlFoto"
+            formControlName="urlFoto"
+            placeholder=" Ex: htt://exemplo.com/foto.jpg"
+            required
+            class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
+            />
+        </div>
+
+         <div class="mb-4">
+            <label for="nome" class="block text-gray-600 font-medium mb-2">Avaliação</label>
+
+        </div>
 
     </form>
 
