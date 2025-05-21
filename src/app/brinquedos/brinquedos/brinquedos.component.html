@@ -1,10 +1,12 @@
 <div class="p-6 max-w-lg mx-auto bg-white shadow-lg rounded-lg mt-6 ">
     <h2>Nova categoria</h2>
     <hr/>
-    <form id="brinquedosForm">
-        <label class="block text-gray-600 font-medium mb-2">Nome da Atividade ou Brinquedo</label>
+    <form id="brinquedosForm" [formGroup]="camposForm" (ngSubmit)="salvar()">
+        <label class="block text-gray-600 font-medium mb-2">Nome da Empresa</label>
         <input type="text"
-               id="Nome"
+               id="nome"
+               name="nome"
+               formControlName="nome"
                placeholder="Ex: Cama elástica, Pula-pula, Pintura facial, Piscina de bolinhas"
                class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
                required
@@ -17,6 +19,7 @@
                rows="4"
                id="descricao"
                name="descricao"
+               formControlName="descricao"
                placeholder="Ex: Pintura facial com temas infantis, gincanas educativas, contação de histórias, brinquedos infláveis de até 3 metros."
                class="w-full p-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring focus:ring-blue-400"
                required
