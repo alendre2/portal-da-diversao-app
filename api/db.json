@@ -1,9 +1,19 @@
 {
-    "categorias": [
-        {
-            "id": "1",
-            "nome": "Recreação Animada",
-            "descricao": "Recreação infantil"
-        }
-    ]
+  "categorias": [
+    {
+      "id": "1",
+      "nome": "Recreação Animada",
+      "descricao": "Recreação com monitores, brincadeiras e jogos infantis"
+    },
+    {
+      "id": "2",
+      "nome": "Teatro Infantil",
+      "descricao": "Peças teatrais educativas e interativas para crianças"
+    },
+    {
+      "nome": "Esportes Kids",
+      "descricao": "Atividades esportivas adaptadas para crianças",
+      "id": "3"
+    }
+  ]
 }
