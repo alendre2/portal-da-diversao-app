@@ -7,8 +7,15 @@ const routes: Routes = [
     path: '', component: LayoutComponent, 
     children: [
       {
-        path: 'brinquedos',
-        loadChildren:() => import('../brinquedos/brinquedos.module').then(m => m.BrinquedosModule)
+        path: 'categorias',
+        loadChildren:() => import('../brinquedos/brinquedos.module').then(m => m.BrinquedosModule),
+        pathMatch: 'full'
+      },
+      {
+        path: 'lugares',
+        loadChildren:() => import('../lugares/lugares.module').then(m => m.LugaresModule),
+        pathMatch: 'full'
+
       }
     ]
   }
