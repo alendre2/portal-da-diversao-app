@@ -1,1 +1,12 @@
-<p>landingpage works!</p>
+<div class="bg-gradient-to-r from-blue-500 to-blue-700 text-white min-h-screen flex flex-col justify-center items-center">
+  <div class="text-center px-6">
+    <h1 class="text-5xl font-extrabold mb-4 drop-shadow-lg">🎉 Bem-vindo à diversão!</h1>
+    <p class="text-xl mb-6 max-w-xl mx-auto">Descubra as atrações mais incríveis para tornar a festa dos pequenos inesquecível!</p>
+
+    <button (click)="navegar()" 
+            class="bg-white text-blue-500 font-semibold py-3 px-6 rounded-full hover:bg-gray-100 transition-all duration-300 flex items-center space-x-2 shadow-md">
+    
+      <span>Olá, {{ profile?.name }}! Clique aqui para aproveitar o site</span>
+    </button>
+  </div>
+</div>
