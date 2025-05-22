@@ -30,4 +30,8 @@ export class GaleriaComponent implements OnInit {
 
   }
 
+  getToltalEstrelas(lugar : Lugar ) : string{
+    return '&#9733;'.repeat(lugar.avaliacao || 0) + '&#9734'.repeat(5- (lugar.avaliacao || 0));
+  }
+
 }
