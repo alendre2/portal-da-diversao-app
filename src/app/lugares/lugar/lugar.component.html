@@ -1,16 +1,16 @@
 <div class="p-6 max-w-lg mx-auto bg-white shadow-lg rounded-lg mt-6 ">
-    <h2>Cadastrar Lugar de Evento</h2>
+    <h2>Cadastrar Empresa</h2>
     <hr/>
 
     <form id="lugarForm" [formGroup]="camposForm" (ngSubmit)="salvar()">
         <div class="mb-4">
-            <label for="nome" class="block text-gray-600 font-medium mb-2">Descrição do Local</label>
+            <label for="nome" class="block text-gray-600 font-medium mb-2">Nome da Empresa</label>
             <input 
             type="text"
             id="nome"
             name="nome"
             formControlName="nome"
-            placeholder=" Ex: Salão de Festas Alegria, Escola Pequeno Príncipe, Praça Central"
+            placeholder=" Ex: Beluska Diversões, Mundo Encantado, Alegria Festas"
             required
             class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
             />
@@ -19,10 +19,11 @@
         </div>
 
         <div class="mb-4">
-            <label for="categoria" class="block text-gray-600 font-medium mb-2">Categoria</label>
+            <label for="categoria" class="block text-gray-600 font-medium mb-2">Tipo de Serviço</label>
             <select
                 id="categoria" 
                 name="categoria"
+                placeholder=" Selecione o tipo de serviço"
                 formControlName="categoria"
                 class="w-full p-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring-blue-400" 
                 >
@@ -37,13 +38,13 @@
 
 
         <div class="mb-4">
-            <label for="localizacao" class="block text-gray-600 font-medium mb-2">Localização</label>
+            <label for="localizacao" class="block text-gray-600 font-medium mb-2">Cidade de Atuação</label>
             <input 
             type="text"
             id="localizacao"
             name="localizacao"
             formControlName="localizacao"
-            placeholder=" Ex: praca das gracas"
+            placeholder=" Ex: Recife - PE, Bairro Boa Viagem"
             required
             class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
             />
@@ -52,7 +53,7 @@
         </div>
 
         <div class="mb-4">
-            <label for="urlFoto" class="block text-gray-600 font-medium mb-2">URLFoto</label>
+            <label for="urlFoto" class="block text-gray-600 font-medium mb-2">Link da Imagem de Divulgação</label>
             <input 
             type="text"
             id="urlFoto"
@@ -66,7 +67,7 @@
         </div>
 
          <div class="mb-4">
-            <label for="avaliacao" class="block text-gray-600 font-medium mb-2">Avaliação</label>
+            <label for="avaliacao" class="block text-gray-600 font-medium mb-2">Avaliação Inicial</label>
              <select
                 id="avaliacao" 
                 name="avaliacao"
@@ -87,7 +88,7 @@
         </div>
 
         <button type="submit" class="w-full bg-blue-600 text-white font-semibold p-3 rounded shadow hover:bg-blue-700">
-               Cadastrar lugar
+              Cadastrar Empresa
            </button>
     </form>
 
