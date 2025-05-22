@@ -9,17 +9,22 @@ const routes: Routes = [
       {
         path: 'categorias',
         loadChildren:() => import('../brinquedos/brinquedos.module').then(m => m.BrinquedosModule),
-        pathMatch: 'full'
+        pathMatch: 'full',
+        data: { titulo: 'Cadastro de Serviço', subTitulo: 'Realize o cadastro da atividade'}
       },
       {
         path: 'lugares',
         loadChildren:() => import('../lugares/lugares.module').then(m => m.LugaresModule),
-        pathMatch: 'full'
+        pathMatch: 'full',
+        data: { titulo: 'Cadastrar Empresa', subTitulo: 'Realize o cadastro de novas empresas'}
+
 
       },{
       path: 'galeria',
       loadChildren:() => import('../galeria/galeria.module').then(m => m.GaleriaModule),
-      pathMatch: 'full'
+      pathMatch: 'full',
+      data: { titulo: 'Empresas Cadastradas', subTitulo: 'Busque locais, recreação, brinquedos infláveis e muito mais para tornar seu evento especial!'}
+
       }
     ]
   }
