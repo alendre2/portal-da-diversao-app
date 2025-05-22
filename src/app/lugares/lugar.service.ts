@@ -11,11 +11,11 @@ export class LugarService {
   constructor(private http: HttpClient) { }
 
   salvar(lugar: Lugar) : Observable<Lugar>{
-    return this.http.post<Lugar>('http://localhost:3000/lugares ', lugar);
+    return this.http.post<Lugar>('http://localhost:3000/lugares', lugar);
   }
 
   obterTodos() : Observable<Lugar[]>{
-    return this.http.get<Lugar[]>('http://localhost:3000/lugares ');
+    return this.http.get<Lugar[]>('http://localhost:3000/lugares');
   }
 
   filtrar(nome: string, categoria: string) : Observable<Lugar[]>{
@@ -26,7 +26,7 @@ export class LugarService {
     parametros = parametros.set('nome_like', nome)
     }
 
-    if(categoria){
+    if(categoria && categoria !== '-1') {
     parametros =  parametros.set('categoria', categoria)
     }
 
